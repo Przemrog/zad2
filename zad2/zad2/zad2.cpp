@@ -120,6 +120,11 @@ int main()
 
 	
 	//Zadanie 5
+
+
+
+
+	/*
 	float x, y, z;
 
 	cout << "Podaj x: ", cin >> x;
@@ -151,5 +156,52 @@ int main()
 		else {
 			cout << z << ", " << y << ", " << x;
 		}
+	}
+	*/
+
+
+	// Zadanie 6
+	
+
+	/*
+	bool bus, deszcz;
+
+	cout <<"Czy pada deszcz? Jeśli tak wpisz 1: ", cin >> deszcz;
+
+	cout <<"Czy jest autobus? Jeśli tak wpisz 1: ", cin >> bus;
+
+	if (deszcz && bus) {
+		cout << endl << "Wez parasol";
+		cout << endl << "Dostaniesz sie nauczelnie";
+	}
+	else if (deszcz && !bus) {
+		cout << endl << "Nie dostaniesz sie na uczelnie";
+	}
+	else if (!deszcz && bus) {
+		cout << endl << "Dostaniesz sie na uczelnie";
+		cout << endl << "Milego dnia i pieknej pogody";
+	}
+	*/
+	
+
+
+	// Zadanie 7
+
+	bool znizka, premia;
+
+	cout << "Czy jest znizka na samochod? Jeśli tak wpisz 1: ", cin >> znizka;
+
+	cout << "Czy otrzymales premie? Jeśli tak wpisz 1: ", cin >> premia;
+
+	if (!znizka || premia) {
+	cout << endl << "Mozesz kupic samochod !";
+	cout << endl << "Znizki na samochod nie ma :(";
+	}
+	else if (!znizka || !premia) {
+	cout << endl << "Zakup samochod trzeba odlozyc na pozniej...";
+	cout << endl << "Znizki na samochod nie ma";
+	}
+	else if (znizka || premia) {
+	cout << endl << "Mozesz kupic samochod !";
 	}
 }
